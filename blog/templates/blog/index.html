@@ -9,7 +9,8 @@
 
     {% for p in posts %}
     <hr>
-    <h2>제목 : {{p.title}}</h2>
+
+    <h2>제목 : <a href="{{p.get_absolute_url}}">{{p.title}}</a></h2>
     <h3>게시일 : {{p.created_at}}</h3>
     <h3>최근 수정일 : {{p.created_at}}</h3>
     <p>내용 : {{p.content}}</p>
