@@ -9,7 +9,7 @@ class Post(models.Model):
     # author =
 
     def __str__(self):
-        return f"[{self.pk}]{self.title}"
+        return f"[{self.pk}]{self.title}{created_at}"
 
 
 # Create your models here.
